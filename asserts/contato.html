@@ -1,41 +1,99 @@
-<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <link rel="icon" type="imagem/png" href="/images/fotocurriculo.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Portfólio</title>
 </head>
+
 <body>
-    <ul>
-        <li>home</li>
-        <li>sobre</li>
-        <li>video</li>
-        <li><a href="contato.html"> Contato</a>
-        </li>
-    </ul>
-    <h1>Entre em contato comigo</h1>
-    <form>
-        <label for="nome">Nome:</label> <br>
-        <input type="text" id="nome">
-        <br>
-        <br>
-        <label for="email">Email:</label> <br>
-        <input type="email" id="email">
-        <br>
-        <br>
-        <label for="assunto">Assunto:</label>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
-    </form>
 
-    <h2>Endereço:</h2>
+    <nav>
+        <div class="logo">
+            <img class="icone" src="/images/fotocurriculo.png" alt="Logo da pagina">
+            <span class="titulo">Portfolio Alanis</span>
+        </div>
 
-    <p>Av. paulista,100</p>
-    <p>São Paulo - SP</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.930388756588!2d-46.64661892555457!3d-23.570943461942598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bd92bce431%3A0xc37ded133806ef0b!2sAv.%20Paulista%2C%20100%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-000!5e0!3m2!1spt-BR!2sbr!4v1686095534095!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <main id="contato">
+        <section id="formulario_mensagem">
+            <h3>Contato</h2>
+                <form>
+                    <div class="campos-form">
+                        <label for="nome">Nome:</label>
+                        <input id="nome" name="nome" type="text"
+                            placeholder="Insira o seu nome completo">
+                        <div id="txtNome"></div>
+                    </div>
+
+                    <div class="campos-form">
+                        <label for="email">E-mail:</label>
+                        <input id="email" name="email" type="text"
+                            placeholder="Insira o seu e-mail">
+                        <div id="txtEmail"></div>
+                    </div>
+
+                    <div class="campos-form">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="8"
+                            placeholder="Deixe sua mensagem..."></textarea>
+                        <div id="txtMensagem"></div>
+                    </div>
+
+                    <button type="button">
+                        Enviar
+                    </button>
+
+
+                </form>
+        </section>
+
+        <section id="formulario_buscacep">
+            <h3>Consultar CEP</h3>
+            <div class="endereco">
+                <div class="campos-form">
+                    <label for="cep">CEP:</label>
+                    <input id="cep" name="cep" type="text"
+                        placeholder="Digite o número do CEP">
+                    <div id="txtCep"></div>
+                </div>
+                <button type="button" onclick="consultarCep()">
+                    Consultar
+                </button>
+                <hr>
+                <div class="campos-form">
+                    <label for="dados">Endereço:</label>
+                    <textarea id="dados" name="dados" rows="7"
+                        placeholder="Busca CEP..."></textarea>
+                    <div id="txtCep"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="redes_sociais">
+            <a href="https://github.com/alanismayra">
+                <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="logo github">
+            </a>
+            <a href="https://www.linkedin.com/in/alanis-mayra-6b804b172/" target="_blank">
+                <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"  alt="logo linkedin">
+            </a>
+           
+        </div>
+        <p class="by">Desenvolvido por Alanis - 2023 &copy;</p>
+    </footer>
+
 </body>
+
 </html>

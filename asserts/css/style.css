@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+:root {
+    --background-page:#ffffff;
+    --background-nav: #ff872c;
+    --background-sobre: #db8f2d;
+    --background-footer: #b64107;
+
+
+    /* Cores de fonte */
+    --cor-fonte-padrao: #000000;
+    --cor-fonte-nav: #fafafa;
+    --cor-fonte-by: rgb(0, 0, 0);
+    --cor-fonte-button-hover: rgb(0, 0, 0);
+
+
+    /* Fontes da pagina */
+    --lato-roboto: 'lato', Roboto;
+    --lato-cursive: 'lato', cursive;
+
+    /* Cores de Efeito */
+    --cor-sombra: #000000;
+    --cor-sombra-hover: #010101;
+    --cor-button-hover: #fefefe;
+    --cor-placeholder-effect: #000000;
+}
+
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--lato-cursiva);
+    color: var(--cor-fonte-padrao);
+    background-color: var(--background-page);
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.10rem ;
+}
+
+h1,h2,h3,a {
+    letter-spacing: 3px;
+    font-weight: 800;
+}
+
+h2,h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 5px var(--cor-sombra-hover) ;
+}
+
+nav {
+    margin: 0 auto;
+    width: 80vw;
+
+    /* Exibe os itens na tela no modo flex */
+    display: flex;
+
+    /* Insere um espaçamento entre os itens */
+    justify-content: space-between;
+
+    background-color: var(--background-nav);
+    box-shadow: 2px 2px 5px var(--gray);
+    font-size: 1.5rem;
+    color: var(--cor-fonte-nav);
+    padding: 2.25rem 1.5rem;
+}
+
+ nav a, .titulo {
+    color:black;
+    letter-spacing: 3px;
+    font-weight: 800;
+ }
+
+ .logo {
+    display:flex;
+    width:20%;
+    justify-content: left;
+    gap:0.5rem;
+    align-items:center;
+ }
+
+ .icone {
+    width: 7rem;
+    padding-left: 1rem;
+   
+ }
+
+ .titulo {
+    font-size: 2rem;
+    color: black;
+ }
+
+ ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none; 
+ }
+ 
+ main {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+ #sobre {
+    display: flex;
+    align-items: center;
+    padding-right: 1.5rem;
+    background-color: var(--background-sobre);
+    border-radius: 1rem;
+    text-align: justify
+ }
+
+ .text_sobre {
+    margin: 1.75rem;
+    align-items: center;
+ }
+
+ .foto{
+    width: 230px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px var(--gray);
+    margin-left: 10rem;
+ }
+
+ #meuvideo {
+    margin-bottom: 2rem;
+ }
+
+ .video {
+    width: 60vw;
+    aspect-ratio: 16/9;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+    margin-top: 2rem;
+ }
+
+ /* Define configurações específicas do elemento footer */
+footer {
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    display: flex;
+
+    /* Alinha os elementos um em cada linha */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-footer);
+}
+
+/* Define configurações específicas da classe redes_sociais */
+.redes_sociais {
+    display: flex;
+
+    /* Alinha os elementos em uma única linha */
+    flex-direction: row;
+
+    /* Centraliza os ícones */
+    justify-content: center;
+    gap: 1.25rem;
+
+    /* Define o cursor do Mouse como link (mãozinha) */
+    cursor: pointer;
+}
+
+/* Define configurações específicas da classe icons */
+.icons {
+    width: 5rem;
+    padding: 0 0.5rem;
+}
+
+/* Define configurações específicas da classe by */
+.by {
+    display: flex;
+    padding-top: 0.75rem;
+    font-size: 1.25rem;
+    color: var(--cor-fonte-by);
+}
+
+/*Página de Contato*/
+
+/* Define configurações específicas para a linha horizontal */
+hr {
+    margin: 1.25rem;
+}
+
+/* Define configurações específicas do elemento main, id contato */
+#contato {
+    width: 80vw;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+/* Define configurações específicas do elemento section, id formulario_mensagem */
+#formulario_mensagem {
+    width: 60vw;
+}
+
+/* Define configurações específicas do elemento section, id meu_video */
+#formulario_buscacep {
+    width: 40vw;
+}
+
+/* Define configurações específicas do elemento label */
+label {
+    font-family: var(--lato-roboto);
+    font-size: 1.15rem;
+    margin-left: 1rem;
+    font-weight: 500;
+}
+
+/* Define configurações específicas dos elementos dos formulários */
+input,
+textarea,
+button {
+    font-family: var(--lato-cursiva);
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    font-size: 1.25rem;
+}
+
+/* Define configurações específicas dos elementos input e textarea */
+input,
+textarea {
+    border: 1px solid rgb(255, 170, 0);
+}
+
+/* Define configurações da propriedade placeholder */
+input::placeholder,
+textarea::placeholder {
+    color: var(--cor-placeholder-effect);
+}
+
+/* Define configurações específicas da propriedade focus */
+input:focus,
+textarea:focus {
+    /* Define as propriedades da borda do elemento selecionado */
+    outline: 1px solid orangered; 
+}
+
+/* Define configurações específicas do elemento button */
+button {
+    
+    background-color: var(--background-nav);
+    color: var(--cor-fonte-nav);
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid var(--cor-button-hover)
+}
+
+/* Define configurações específicas da propriedade hover do elemento button */
+button:hover {
+    background-color: var(--cor-button-hover);
+    color: var(--cor-fonte-button-hover);
+}
+
+/* Define configurações específicas da Classe campos-form */
+.campos-form {
+    margin-bottom: 1rem;
+}
+
+/* Define configurações específicas dos elementos de mensagem
+de validação dos campos */
+#txtNome,
+#txtEmail,
+#txtMensagem,
+#txtCep {
+    font-size: 1rem;
+    padding: 0.25rem 0;
+}
