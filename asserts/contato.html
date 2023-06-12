@@ -31,15 +31,15 @@
                 <form>
                     <div class="campos-form">
                         <label for="nome">Nome:</label>
-                        <input id="nome" name="nome" type="text"
+                        <input id="nome" name="nome" onkeyup="validaNome()" type="text"
                             placeholder="Insira o seu nome completo">
                         <div id="txtNome"></div>
-                    </div>
+                    </div>          
 
                     <div class="campos-form">
                         <label for="email">E-mail:</label>
                         <input id="email" name="email" type="text"
-                            placeholder="Insira o seu e-mail">
+                            placeholder="Insira o seu e-mail" onkeyup="validaEmail()">
                         <div id="txtEmail"></div>
                     </div>
 
@@ -93,7 +93,7 @@
         </div>
         <p class="by">Desenvolvido por Alanis - 2023 &copy;</p>
     </footer>
-
+<script src="/js/script.js"></script>
 </body>
 
 </html>
